@@ -21,9 +21,11 @@ export default function TechnicalMetrics() {
 								viewport={{ once: true }}
 								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
 							>
-								<h4 className="text-lg font-semibold text-gray-300">Data Scraping</h4>
+								<h4 className="text-lg font-semibold text-gray-300">Data Verification</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• WIP</li>
+									<li>• Extracted and structured data from various external APIs into application models for comparison with user-entered data</li>
+									<li>• Utilized Cheerio to scrape and parse HTML content, mapping the data into models for validation and analysis</li>
+									<li>• Leveraged internal APIs to cross-reference rosters from major North American sports leagues (NFL, NBA, MLB, NHL) with data ingested from external sources</li>
 								</ul>
 							</motion.div>
 							<motion.div
@@ -34,7 +36,9 @@ export default function TechnicalMetrics() {
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Browser Applications</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• WIP</li>
+									<li>• Maintained and enhanced a legacy Java 8 application utilizing Hibernate for sports database management</li>
+									<li>• Supported and improved a Node.js/JavaScript application used for real-time sports data entry</li>
+									<li>• Contributed to the development of an AngularJS application designed to consolidate and replace legacy systems</li>
 								</ul>
 							</motion.div>
 						</div>
@@ -52,7 +56,9 @@ export default function TechnicalMetrics() {
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Code Quality</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• WIP</li>
+									<li>• Replaced deprecated functionality with modern, supported packages in a JavaScript/Node.js application</li>
+									<li>• Ensured both legacy and new applications adhered to the organization's Software Development Life Cycle (SDLC) standards</li>
+									<li>• Contributed to Git-based code reviews to maintain code quality and ensure alignment with CI/CD best practices</li>
 								</ul>
 							</motion.div>
 							<motion.div
@@ -63,7 +69,9 @@ export default function TechnicalMetrics() {
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Team Impact</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Mentored 3 junior developers</li>
+									<li>• Mentored a team of three junior developers, providing guidance on best practices, code quality, and professional growth</li>
+									<li>• Collaborated in an Agile/Scrum environment to support iterative development and timely delivery of features</li>
+									<li>• Authored detailed runbooks and led knowledge transfer sessions to ensure continuity and team-wide understanding of systems and workflows</li>
 								</ul>
 							</motion.div>
 						</div>
