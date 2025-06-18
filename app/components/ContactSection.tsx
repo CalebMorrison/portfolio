@@ -45,7 +45,7 @@ export default function ContactSection() {
 							</motion.a>
 							<p className="text-purple-500 mt-8 mb-2">$ cat resume.pdf</p>
 							<motion.a
-								href="/resume/Resume-CalebMorrison.pdf"
+								href="/portfolio/resume/Resume-CalebMorrison.pdf"
 								download
 								rel="noopener noreferrer"
 								whileHover={{ scale: 1.02 }}
