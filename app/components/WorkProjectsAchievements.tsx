@@ -57,7 +57,7 @@ export default function TechnicalMetrics() {
 								<h4 className="text-lg font-semibold text-gray-300">Code Quality</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
 									<li>• Replaced deprecated functionality with modern, supported packages in a JavaScript/Node.js application</li>
-									<li>• Ensured both legacy and new applications adhered to the organization's Software Development Life Cycle (SDLC) standards</li>
+									<li>• Ensured both legacy and new applications adhered to the organization&#39;s Software Development Life Cycle standards</li>
 									<li>• Contributed to Git-based code reviews to maintain code quality and ensure alignment with CI/CD best practices</li>
 								</ul>
 							</motion.div>

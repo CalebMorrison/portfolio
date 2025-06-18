@@ -1,7 +1,7 @@
 'use client';
 
 import HeroSection from './components/HeroSection';
-import PersonalProjects from './components/PersonalProjects';
+//import PersonalProjects from './components/PersonalProjects';
 import WorkProjectsAchievements from './components/WorkProjectsAchievements';
 import ContactSection from './components/ContactSection';
 
