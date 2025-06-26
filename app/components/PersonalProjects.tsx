@@ -13,12 +13,12 @@ export default function SystemArchitecture() {
 				<div className="grid grid-cols-1 gap-8">
 					{[
 						{
-							title: 'Example',
-							description: 'Example Description',
+							title: 'Simple Leaderboard',
+							description: 'One of my hobbies is Warhammer 40k and I joined a league so I made a leaderboard to keep track of the rankings of the monthly matches.',
 							details: [
-								'Working on this part',
+								'This was a good intro to react along with the porfolio website itself, not using a template definielty showed me the depth of what react can do and how much there is to learn.',
 							],
-							tech: ['React', 'Typescript', 'Next.JS'],
+							tech: ['React', 'Javascript', 'Next.JS'],
 						},
 					].map((project, index) => (
 						<motion.div
@@ -32,11 +32,17 @@ export default function SystemArchitecture() {
 							<h3 className="text-2xl font-bold mb-4">{project.title}</h3>
 							<p className="text-gray-400 mb-6">{project.description}</p>
 							<div className="mb-6">
-								<h4 className="text-lg font-semibold mb-2">Key Achievements:</h4>
+								<h4 className="text-lg font-semibold mb-2">Key Takeaways:</h4>
 								<ul className="list-disc list-inside space-y-2 text-gray-300">
 									{project.details.map((detail, i) => (
 										<li key={i}>{detail}</li>
 									))}
+								</ul>
+							</div>
+							<div className="mb-6">
+								<h4 className="text-lg font-semibold mb-2">Project Link:</h4>
+								<ul className="list-disc list-inside space-y-2 text-gray-300">
+									<li>Click <a href="https://40kleaderboard.vercel.app"><b><u>here</u></b></a> to checkout the leaderboard.</li>
 								</ul>
 							</div>
 							<div className="flex flex-wrap gap-2">
