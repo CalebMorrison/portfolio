@@ -1,8 +1,26 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 export default function SystemArchitecture() {
+	const [nbaIframeSrc, setNbaIframeSrc] = useState('https://nba-widget.vercel.app');
+
+	useEffect(() => {
+		const handleMessage = (event: MessageEvent) => {
+			// optionally check event.origin === 'https://nba-widget.vercel.app'
+			if (event.data?.type === 'loadBoxscore') {
+				const gameId = event.data.gameId;
+				setNbaIframeSrc(`https://nba-widget.vercel.app/game.html?gameId=${gameId}`);
+			}
+			if (event.data?.type === 'loadScoreboard') {
+				setNbaIframeSrc('https://nba-widget.vercel.app');
+			}
+		};
+
+		window.addEventListener('message', handleMessage);
+		return () => window.removeEventListener('message', handleMessage);
+	}, []);
 	return (
 		<section className="py-20 px-4">
 			<div className="max-w-6xl mx-auto">
@@ -56,11 +74,12 @@ export default function SystemArchitecture() {
 
 					))}
 				</div>
-				<div className="grid grid-cols-1 gap-8">
+				{/* NBA WIDGET SECTION */}
+				<div className="grid grid-cols-1 gap-8 mt-16">
 					{[
 						{
 							title: 'NBA Widget',
-							description: 'Using the ESPN API I made this datepicker with a simple NBA Scoreboard',
+							description: 'Using the ESPN API I made this datepicker with a simple NBA Scoreboard with a link to the boxscore available.',
 							tech: ['HTML', 'Javascript', 'CSS'],
 						},
 					].map((project, index) => (
@@ -75,16 +94,17 @@ export default function SystemArchitecture() {
 							<h3 className="text-2xl font-bold mb-4">{project.title}</h3>
 							<p className="text-gray-400 mb-6">{project.description}</p>
 
-							{/* 📌 Embedded Iframe */}
+							{/* 📌 Dynamic Iframe */}
 							<div className="mb-6">
 								<iframe
-									src="https://nba-widget.vercel.app" // replace with actual deployed scoreboard
+									src={nbaIframeSrc}
 									title="NBA Scoreboard"
 									className="w-full h-[600px] rounded-lg border border-gray-700"
 									style={{ border: 'none' }}
 									loading="lazy"
 								/>
 							</div>
+
 							<div className="flex flex-wrap gap-2">
 								{project.tech.map((tech, i) => (
 									<span
