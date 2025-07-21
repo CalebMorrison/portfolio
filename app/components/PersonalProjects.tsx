@@ -94,7 +94,7 @@ export default function SystemArchitecture() {
             </motion.div>
           ))}
         </div>
-
+        {/*}
         <div className="grid grid-cols-1 gap-8 mt-16">
           {[
             {
@@ -157,6 +157,7 @@ export default function SystemArchitecture() {
             </motion.div>
           ))}
         </div>
+        */}
 
         {/* NBA WIDGET SECTION */}
         <div className="grid grid-cols-1 gap-8 mt-16">
