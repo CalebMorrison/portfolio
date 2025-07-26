@@ -77,7 +77,7 @@ export default function SystemArchitecture() {
                         <u>here</u>
                       </b>
                     </a>{" "}
-                    to checkout the leaderboard.
+                    to check out the leaderboard.
                   </li>
                 </ul>
               </div>
@@ -139,7 +139,7 @@ export default function SystemArchitecture() {
                         <u>here</u>
                       </b>
                     </a>{" "}
-                    to checkout the deck builder.
+                    to check out the deck builder.
                   </li>
                 </ul>
               </div>
